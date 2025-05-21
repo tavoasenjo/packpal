@@ -26,7 +26,7 @@ const AddItem = ({ addItem }) => {
 
     if (!item.name) return;
 
-    console.log("submit!!!!!");
+    // console.log("submit!!!!!");
     addItem(newItem);
     setItem({
       name: "",

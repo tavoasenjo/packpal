@@ -21,7 +21,7 @@ const App = () => {
   };
 
   const removeItem = (id) => {
-    console.log("remove item");
+    // console.log("remove item");
     setItems((prev) => {
       const updatedItems = prev.filter((item) => item.id !== id);
       localStorage.setItem("items", JSON.stringify(updatedItems));
@@ -30,7 +30,7 @@ const App = () => {
   };
 
   const updateItem = (id) => {
-    console.log("update item");
+    // console.log("update item");
     setItems((prev) => {
       const updatedItems = prev.map((item) =>
         item.id === id ? { ...item, packed: !item.packed } : item
